@@ -22,7 +22,7 @@ Star the project 🌟 to get releases notification and help growing the communit
 
 </p>
 
-![](GRCeek.svg)
+![](gh_banner.png)
 
 [![CodeFactor](https://www.codefactor.io/repository/github/intuitem/ciso-assistant-community/badge)](https://www.codefactor.io/repository/github/intuitem/ciso-assistant-community)
 [![API Tests](https://github.com/intuitem/ciso-assistant-community/actions/workflows/backend-api-tests.yml/badge.svg)](https://github.com/intuitem/ciso-assistant-community/actions/workflows/backend-api-tests.yml)
@@ -55,33 +55,11 @@ We’re constantly evolving with input from users and customers. Like an octopus
 
 ---
 
-## Core Workflow
-
-The core workflow of CISO Assistant is designed around a comprehensive Governance, Risk, and Compliance (GRC) model. The following diagram illustrates the relationships between the core objects.
-
-![Core Objects](core_objects.png)
-
-The workflow is divided into five main areas:
-
-1.  **Organisation**: Defines the structure of the entities being managed. It starts with `Assets` which belong to a `Domain` (e.g., a department or business unit). Each `Domain` can have multiple `Perimeters` (e.g., projects, scopes, or products).
-2.  **Library**: A centralized repository of GRC knowledge. It includes a `Catalog` of `Threats`, `Frameworks` (like NIST CSF or ISO 27001), and `Reference Controls`. It also contains a `Matrix` for risk calculation.
-3.  **Risk**: This area focuses on the risk assessment process. A `Risk Assessment` analyzes how a `Threat` from the Library could affect an `Asset` from the Organisation. This is described through a `Scenario`. The assessment considers `existing controls` to determine the `Current level` of risk and proposes `extra controls` to reach a target `Residual level`.
-4.  **Action Plan**: This section deals with the implementation of controls. An `Applied control` (which can be technical, a policy, etc.) is put in place to mitigate risk. The effectiveness of this control is `Confirmed by` `Evidence`.
-5.  **Compliance**: This involves performing an `Audit` to assess projects against `Frameworks`. The audit checks for compliance with specific `Requirements`, which are derived from existing or extra controls.
-
-### Workflow Analysis and Enhancements
-
-The workflow provides a solid and logical foundation for GRC. Based on a review, here are some suggestions for enhancement that are being considered for future versions:
-
-*   **Explicit Feedback Loops**: To better support a continuous improvement cycle, more explicit feedback loops will be added. For example, the findings from an `Audit` will feed back into the `Risk assessment` process and can be used to update the `Library`.
-*   **Clarified Terminology**: To improve clarity, ambiguous terms will be refined. For instance, "Matrix" will be specified (e.g., "Risk Matrix"), and labels like "Scale and format" will be made more descriptive.
-*   **Strengthened Risk-Compliance Link**: The relationship between risk management and compliance will be reinforced. A direct link from `Risk assessment` to `Audit` will be added to show how risk levels can be used to prioritize and scope audit activities.
-*   **Defined Roles and Responsibilities**: To provide better operational context, roles and responsibilities (e.g., Asset Owner, Risk Analyst, Auditor) will be integrated into the workflow, clarifying who is accountable for each stage.
-
 ## Core Concepts
 
 Here’s a snapshot of the fundamental building blocks in CISO Assistant:
 
+![Core Objects](core_objects.png)
 
 For full details, check the [data model documentation](documentation/architecture/data-model.md).
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ciso from '$lib/assets/GRCeek.svg';
+	import ciso from '$lib/assets/ciso.svg';
 
 	interface Props {
 		height?: number;
