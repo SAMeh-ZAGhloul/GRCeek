@@ -61,6 +61,34 @@ Here’s a snapshot of the fundamental building blocks in CISO Assistant:
 
 ![Core Objects](core_objects.png)
 
+The GRC (Governance, Risk, and Compliance) workflow in CISO Assistant is structured around five key areas:
+
+1.  **Organisation**: This component defines the operational scope of the GRC activities. It includes:
+    *   **Assets**: All tangible and intangible items of value to the organization.
+    *   **Domains**: Logical groupings of assets, such as departments or business units.
+    *   **Perimeters**: Specific boundaries for assessment, such as individual projects, products, or systems.
+
+2.  **Library**: A centralized repository of reference materials that inform the GRC process. It contains:
+    *   **Catalog of Threats**: A collection of potential threats that could impact organizational assets.
+    *   **Frameworks**: Industry standards and best practices (e.g., NIST, ISO 27001) used for compliance and risk management.
+    *   **Reference Controls**: A set of predefined controls that can be applied to mitigate risks.
+    *   **Matrix**: A tool for mapping relationships between different elements, such as threats and controls.
+
+3.  **Risk**: This section focuses on the systematic assessment and management of risks. The key steps include:
+    *   **Risk Assessment**: Scenarios are developed based on threats from the library to evaluate their potential impact on assets.
+    *   **Current Risk Level**: The level of risk before any new controls are applied.
+    *   **Residual Risk Level**: The level of risk remaining after controls have been implemented.
+
+4.  **Compliance**: This area ensures that the organization adheres to relevant frameworks and requirements. It involves:
+    *   **Audit**: Projects and systems are assessed against the requirements of one or more frameworks.
+    *   **Compliance Assessment**: The compliance of each requirement is evaluated to identify any gaps.
+
+5.  **Action Plan**: This is where risk mitigation and compliance efforts are put into action. It includes:
+    *   **Applied Controls**: Technical, policy-based, or procedural controls are implemented to address identified risks and compliance gaps.
+    *   **Evidence**: Documentation or other proof is collected to confirm that controls have been effectively implemented.
+
+This structured workflow ensures that all aspects of GRC are interconnected, allowing for a comprehensive and reusable approach to cybersecurity management.
+
 For full details, check the [data model documentation](documentation/architecture/data-model.md).
 
 ---
